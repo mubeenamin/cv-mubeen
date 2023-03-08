@@ -1,6 +1,12 @@
+import { aboutMe } from "../data/page-data";
 
-
-export default function AboutMe( {data, skills}:any ) {
+export default function AboutMe({
+  data,
+  skills,
+}: {
+  data: { title: string; body: string[] };
+  skills: { hard: { icon: string; text: string }[] };
+}) {
   const { title, body } = data;
   const { hard } = skills;
   return (
@@ -14,7 +20,7 @@ export default function AboutMe( {data, skills}:any ) {
         ))}
       </div>
       <div className="flex flex-wrap gap-4">
-        {hard.map((el:{icon:string; text:string}) => (
+        {hard.map((el: { icon: string; text: string }) => (
           <p key={el.text} className="mb-6">
             {el.icon}
             {el.text}
