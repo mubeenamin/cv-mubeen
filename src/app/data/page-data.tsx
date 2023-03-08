@@ -9,10 +9,10 @@ export const personalData = {
   contactLinks: [
     {
       name: "mubeenamin6@gmail.com",
-      icon: "",
+      icon: "/mail.svg",
     },
-    { name: "https://www.facebook.com/mubeen.ameen1", icon: "" },
-    { name: "https://twitter.com/mubeenamin6", icon: "" },
+    { name: "https://www.facebook.com/mubeen.ameen1", icon: "/facebook.svg" },
+    { name: "https://twitter.com/mubeenamin6", icon: "/twitter.svg" },
   ],
 };
 
@@ -24,13 +24,13 @@ export const aboutMe = {
   ],
 };
 export const skills = {
- hard: [
+  hard: [
     { icon: "💻", text: "NextJS 13" },
     { icon: "ʦ", text: "TypeScript" },
     { icon: "🚀", text: "React" },
     { icon: "💾", text: "SQL" },
-  ]
-}
+  ],
+};
 export const professionalData = {
   title: "Professional Experience",
   experiences: [
@@ -40,5 +40,16 @@ export const professionalData = {
         "Assist in testing and the installation of network devices. Checking of network data connections. Fabricate, punch down and terminate cables. Test and diagnose data communication problems.",
       current: true,
     },
+  ],
+};
+export const navBarItems = {
+  items: [
+    { id: 1, name: "Home", link: "" },
+    { id: 2, name: "Projects", link: "" },
+    { id: 3, name: "Resume", link: "" },
+    { id: 4, name: "Contact", link: "" },
+    { id: 5, name: "About Me", link: "" },
+    { id: 6, name: "Skills", link: "" },
+    { id: 7, name: "Professional Experience", link: "" },
   ],
 };

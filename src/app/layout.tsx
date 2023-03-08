@@ -1,7 +1,8 @@
+import NavBar from "./component/naveBar";
 import Sidebar from "./component/sidebar";
-import { personalData } from "./data/page-data";
+import { navBarItems, personalData } from "./data/page-data";
 import "./globals.css";
-
+import Image from "next/image";
 export const metadata = {
   title: "Resume",
   description: "Resume of Mubeen Ameen",
@@ -14,11 +15,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex flex-col sm:flex-row bg-black">
-        <Sidebar data={personalData} />
-        <main className="grow-full w-full sm:basis-[75%]  ml-auto ">
+      <body>
+      <Image
+          width={3000}
+          height={2000}
+          alt="bg image"
+          src={"/bg.jpg"}
+          className=" fixed w-full h-screen bg-cover shrink "
+        />
+        <NavBar data={navBarItems}/>
+        
           {children}
-        </main>
+        
       </body>
     </html>
   );
