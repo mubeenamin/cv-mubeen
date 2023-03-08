@@ -3,7 +3,7 @@ import Link from "next/link";
 
 
 
-export default function Sidebar({ data }) {
+export default function Sidebar({ data }:any) {
   const { name, role, education, contactLinks } = data;
   return (
     <div className="bg-black flex flex-col content-between w-full h-auto sm:h-screen sm:justify-around sm:w-[25%] sm:fixed">

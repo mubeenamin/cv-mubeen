@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import AboutMe from "./component/aboutme";
 import { aboutMe, skills } from "./data/page-data";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
