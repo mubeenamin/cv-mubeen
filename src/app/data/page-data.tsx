@@ -51,7 +51,7 @@ export const professionalData = {
 export const navBarItems = {
   items: [
     { id: 1, name: "Home", link: "/" },
-    { id: 2, name: "About Me", link: "/aboudMe" },
+    { id: 2, name: "About Me", link: "/aboutMe" },
     { id: 3, name: "Resume", link: "" },
     { id: 4, name: "Skills", link: "" },
     { id: 5, name: "Contact", link: "" },
