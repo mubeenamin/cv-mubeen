@@ -1,4 +1,7 @@
+"use client";
 import Link from "next/link";
+import { Menu } from "@headlessui/react";
+import Image from "next/image";
 
 export default function NavBar({
   data,
@@ -7,15 +10,26 @@ export default function NavBar({
 }) {
   const { items } = data;
   return (
-    <div className="relative py-8">
-      <ul className="flex justify-end gap-4">
+    <main className="relative py-8">
+      <ul className="  hidden sm:flex sm:justify-end sm:gap-4 ">
         {items.map((item) => (
-          <li key={item.id} className=" bg-slate-800 text-white p-3 rounded-md hover:text-black hover:bg-gradient-to-r hover:from-green-200 hover:to-green-500 cursor-pointer">
-            <Link href={item.link} />
-            {item.name}
-          </li>
+          <Link
+            href={item.link}
+            key={item.id}
+            className=" bg-slate-800 text-white p-3 rounded-md flex justify-center w-32 hover:text-black hover:bg-gradient-to-r hover:from-green-200 hover:to-green-500 cursor-pointer "
+          >
+            <li>{item.name}</li>
+          </Link>
         ))}
       </ul>
-    </div>
+
+      <div className="sm:hidden flex justify-end">
+        <Menu>
+          <Menu.Button className="ui-active:rounded-full  ui-active:bg-gradient-to-r ui-active:from-green-200 ui-active:to-green-500 p-2">
+            <Image src={"/hamburger.svg"} width={30} height={30} alt="menu" />
+          </Menu.Button>
+        </Menu>
+      </div>
+    </main>
   );
 }

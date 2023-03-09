@@ -19,8 +19,14 @@ export const personalData = {
 export const aboutMe = {
   title: "About Me",
   body: [
-    "As a highly motivated and driven individual with a passion for making a positive impact, I have a unique blend of technical and interpersonal skills, thanks to my background in computer science. I am able to tackle complex problems with ease, and I never lose sight of my ultimate goal, even when facing challenges.",
+    "I am highly motivated and driven individual with a passion for making a positive impact, I have a unique blend of technical and interpersonal skills, thanks to my background in computer science. I am able to tackle complex problems with ease, and I never lose sight of my ultimate goal, even when facing challenges.",
     "When I'm not working, I love hiking, reading, and spending time with my friends and family. I believe that my determination, can-do attitude, and hard work make me a true asset to any team.",
+  ],
+  personal: [
+    { name: "Phone", description: "+92-321-4041063", icon: "/mobile.svg" },
+    { name: "Location", description: "Lahore, Pakistan", icon: "/location.svg" },
+    { name: "Email", description: "mubeenamin6@gmail.com", icon: "/email.svg" },
+    { name: "Birthday", description: "Feb 20,1991", icon: "/birthday.svg" },
   ],
 };
 export const skills = {
@@ -45,10 +51,9 @@ export const professionalData = {
 export const navBarItems = {
   items: [
     { id: 1, name: "Home", link: "/" },
-    { id: 2, name: "About Me", link: "" },
+    { id: 2, name: "About Me", link: "/aboudMe" },
     { id: 3, name: "Resume", link: "" },
     { id: 4, name: "Skills", link: "" },
     { id: 5, name: "Contact", link: "" },
-    
   ],
 };
