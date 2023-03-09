@@ -11,22 +11,21 @@ type prop={
   }[];
 }
 
-export default function Sidebar({ data }:{data:prop}) {
+export default function HomePage({ data }:{data:prop}) {
   const { name, role, education, contactLinks } = data;
   return (
     <div className="flex flex-col items-center justify-center relative">
       <div className="text-white flex flex-col p-10 items-center justify-center">
         <Image
           priority
-          width={200}
-          height={200}
-          className="rounded-full mb-6"
+          width={250}
+          height={250}
+          className="rounded-full mb-6 ring-8 ring-gray-700 hover:ring-green-500"
           src={"/profile.jpg"}
           alt="Mubeen Ameen"
         />
-        <h1 className="mb-6 ">{name}</h1>
+        <h1 >{name}</h1>
         <h2 className="mb-6 ">{role}</h2>
-        <h2 className="mb-6">Contact me</h2>
         <div className="flex flex-wrap  gap-2">
           {contactLinks.map((link) => (
             <Link

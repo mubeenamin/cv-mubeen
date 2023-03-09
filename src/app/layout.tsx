@@ -1,5 +1,5 @@
 import NavBar from "./component/naveBar";
-import Sidebar from "./component/sidebar";
+
 import { navBarItems, personalData } from "./data/page-data";
 import "./globals.css";
 import Image from "next/image";
@@ -23,10 +23,11 @@ export default function RootLayout({
           src={"/bg.jpg"}
           className=" fixed w-full h-screen bg-cover shrink "
         />
+        <main className="px-4">
         <NavBar data={navBarItems}/>
         
           {children}
-        
+          </main>
       </body>
     </html>
   );

@@ -44,12 +44,11 @@ export const professionalData = {
 };
 export const navBarItems = {
   items: [
-    { id: 1, name: "Home", link: "" },
-    { id: 2, name: "Projects", link: "" },
+    { id: 1, name: "Home", link: "/" },
+    { id: 2, name: "About Me", link: "" },
     { id: 3, name: "Resume", link: "" },
-    { id: 4, name: "Contact", link: "" },
-    { id: 5, name: "About Me", link: "" },
-    { id: 6, name: "Skills", link: "" },
-    { id: 7, name: "Professional Experience", link: "" },
+    { id: 4, name: "Skills", link: "" },
+    { id: 5, name: "Contact", link: "" },
+    
   ],
 };

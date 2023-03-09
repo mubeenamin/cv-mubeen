@@ -11,7 +11,7 @@ export default function AboutMe({
   const { title, body } = data;
   const { hard } = skills;
   return (
-    <main className="h-screen bg-slate-50 relative px-4">
+    <main className="h-screen bg-slate-50 relative">
       <div>
         <h2>{title}</h2>
         {body?.map((el) => (
