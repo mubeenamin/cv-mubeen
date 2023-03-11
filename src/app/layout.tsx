@@ -19,11 +19,12 @@ export default function RootLayout({
       <Image
           width={3000}
           height={2000}
+        
           alt="bg image"
           src={"/bg.jpg"}
           className=" fixed w-full h-screen bg-cover shrink "
         />
-        <main className="px-4">
+        <main className="lg:px-4">
         <NavBar data={navBarItems}/>
         
           {children}

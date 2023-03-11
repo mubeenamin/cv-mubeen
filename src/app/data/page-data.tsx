@@ -2,9 +2,17 @@ export const personalData = {
   name: "Mubeen Ameen",
   role: "Web Developer",
   education: [
-    "Bechelor of Science of Computer Science, Virtual University of Pakistan",
-    "Intermediate of Computer Sceince, B.I.S.E. Lahore",
-    "Matric, B.I.S.E. Lahore",
+    {
+      degree: "Bechelor of Science of Computer Science",
+      institute: "Virtual University of Pakistan",
+      year: "2017",
+    },
+    {
+      degree: "Intermediate of Computer Sceince",
+      institute: "B.I.S.E. Lahore",
+      year: "2015",
+    },
+    { degree: "Matric", institute: "B.I.S.E. Lahore", year: "2010" },
   ],
   contactLinks: [
     {
@@ -24,27 +32,34 @@ export const aboutMe = {
   ],
   personal: [
     { name: "Phone", description: "+92-321-4041063", icon: "/mobile.svg" },
-    { name: "Location", description: "Lahore, Pakistan", icon: "/location.svg" },
+    {
+      name: "Location",
+      description: "Lahore, Pakistan",
+      icon: "/location.svg",
+    },
     { name: "Email", description: "mubeenamin6@gmail.com", icon: "/email.svg" },
     { name: "Birthday", description: "Feb 20,1991", icon: "/birthday.svg" },
   ],
 };
 export const skills = {
+  title: "Skills",
   hard: [
-    { icon: "💻", text: "NextJS 13" },
-    { icon: "ʦ", text: "TypeScript" },
-    { icon: "🚀", text: "React" },
-    { icon: "💾", text: "SQL" },
+    { icon: "/html5.svg", text: "Html", percents: 80 },
+    { icon: "/tailwindcss.svg", text: "Tailwind css", percents:90 },
+    { icon: "/next.svg", text: "NextJS 13", percents:70 },
+    { icon: "/typescript.svg", text: "TypeScript", percents:80 },
+    { icon: "/react.svg", text: "React", percents:80 },
+    
   ],
 };
 export const professionalData = {
   title: "Professional Experience",
   experiences: [
     {
-      role: "Assistant Network Administrator, District & Sessions Court, Lahore. (2015-Present)",
+      role: "Assistant Network Administrator, District & Sessions Court, Lahore. ",
       description:
         "Assist in testing and the installation of network devices. Checking of network data connections. Fabricate, punch down and terminate cables. Test and diagnose data communication problems.",
-      current: true,
+      year: "(2015-Present)",
     },
   ],
 };
@@ -52,8 +67,8 @@ export const navBarItems = {
   items: [
     { id: 1, name: "Home", link: "/" },
     { id: 2, name: "About Me", link: "/aboutMe" },
-    { id: 3, name: "Resume", link: "" },
-    { id: 4, name: "Skills", link: "" },
+    { id: 3, name: "Resume", link: "/resume" },
+    { id: 4, name: "Skills", link: "/skills" },
     { id: 5, name: "Contact", link: "" },
   ],
 };
