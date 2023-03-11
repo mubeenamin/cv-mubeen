@@ -69,6 +69,6 @@ export const navBarItems = {
     { id: 2, name: "About Me", link: "/aboutMe" },
     { id: 3, name: "Resume", link: "/resume" },
     { id: 4, name: "Skills", link: "/skills" },
-    { id: 5, name: "Contact", link: "" },
+    
   ],
 };

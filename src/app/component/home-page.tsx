@@ -1,17 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 
-type prop={ 
+type prop = {
   name: string;
   role: string;
-  education: string[];
+  education: { degree: string; institute: string; year: string }[];
   contactLinks: {
-      name: string;
-      icon: string;
+    name: string;
+    icon: string;
   }[];
-}
+};
 
-export default function HomePage({ data }:{data:prop}) {
+export default function HomePage({ data }: { data: prop }) {
   const { name, role, education, contactLinks } = data;
   return (
     <div className="flex flex-col items-center justify-center relative">
@@ -24,8 +24,8 @@ export default function HomePage({ data }:{data:prop}) {
           src={"/profile.jpg"}
           alt="Mubeen Ameen"
         />
-        <h1 >{name}</h1>
-        <h2 className="mb-6 ">{role}</h2>
+        <h1>{name}</h1>
+        <h2 className="mb-6 text-xl text-gray-500 font-bold">{role}</h2>
         <div className="flex flex-wrap  gap-2">
           {contactLinks.map((link) => (
             <Link
@@ -35,7 +35,7 @@ export default function HomePage({ data }:{data:prop}) {
               rel="noreferrer"
               className="hover:opacity-40"
             >
-              <Image src={link.icon} width={42} height={42} alt="contact me"/>
+              <Image src={link.icon} width={42} height={42} alt="contact me" />
             </Link>
           ))}
         </div>

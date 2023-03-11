@@ -2,13 +2,17 @@
 import Link from "next/link";
 import { Menu } from "@headlessui/react";
 import Image from "next/image";
-
+import {useState} from "react";
 export default function NavBar({
   data,
 }: {
   data: { items: { id: number; name: string; link: string }[] };
 }) {
   const { items } = data;
+  const [navBar, setNavBar]=useState(false);
+  const handlenavBar =()=>{
+    setNavBar(!navBar);
+  }
   return (
     <main className="relative py-8">
       <ul className="  hidden sm:flex sm:justify-end sm:gap-4 ">
@@ -25,7 +29,8 @@ export default function NavBar({
 
       <div className="sm:hidden flex justify-end">
         <Menu>
-          <Menu.Button className="ui-active:rounded-full  ui-active:bg-gradient-to-r ui-active:from-green-200 ui-active:to-green-500 p-2">
+
+          <Menu.Button onClick={handlenavBar} className="rounded-full  bg-gradient-to-r from-green-200 to-green-500 p-2">
             <Image src={"/hamburger.svg"} width={30} height={30} alt="menu" />
           </Menu.Button>
         </Menu>
