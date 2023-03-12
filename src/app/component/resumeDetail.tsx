@@ -2,7 +2,7 @@ export default function ResumeDetail({ data, professional }: any) {
   const { education } = data;
   const {title, experiences}=professional;
   return (
-    <main className=" bg-slate-800 relative p-4 sm:p-8 lg:p-20 rounded-lg mb-10">
+    <main className=" bg-slate-800 p-4 sm:p-8 lg:p-20 rounded-lg mb-10">
         <h1 className="mb-8">Education</h1>
       <div className="lg:flex space-y-4 lg:space-x-4 lg:space-y-0">
         

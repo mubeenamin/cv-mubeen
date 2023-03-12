@@ -18,7 +18,7 @@ export default function SkillsDetails({ data }: { data: prop }) {
     setActiveCard(index === activeCard ? null : index);
   };
   return (
-    <section className=" bg-slate-800 relative p-4 sm:p-8 lg:p-20 rounded-lg mb-10">
+    <section className=" bg-slate-800 p-4 sm:p-8 lg:p-20 rounded-lg mb-10">
       <h1 className="mb-8">{title}</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
         { hard.map((link, index)=>(

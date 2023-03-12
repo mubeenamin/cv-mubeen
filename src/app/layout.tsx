@@ -15,20 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-      <Image
-          width={3000}
-          height={2000}
-        
-          alt="bg image"
-          src={"/bg.jpg"}
-          className=" fixed w-full h-screen bg-cover shrink "
-        />
-        <main className="lg:px-4">
+      <body className="lg:px-4 bg-gradient-to-t from-slate-700 to-black">
         <NavBar data={navBarItems}/>
-        
           {children}
-          </main>
+          
       </body>
     </html>
   );

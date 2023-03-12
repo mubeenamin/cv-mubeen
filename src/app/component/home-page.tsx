@@ -14,8 +14,9 @@ type prop = {
 export default function HomePage({ data }: { data: prop }) {
   const { name, role, education, contactLinks } = data;
   return (
-    <div className="flex flex-col items-center justify-center relative">
-      <div className="text-white flex flex-col p-10 items-center justify-center">
+    <div className="flex flex-col items-center justify-center h-screen ">
+    
+      <div className=" text-white flex flex-col p-6 items-center justify-center">
         <Image
           priority
           width={250}

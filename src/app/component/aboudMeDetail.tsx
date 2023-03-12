@@ -10,7 +10,7 @@ export default function AboutMeDetail({ data }: { data: prop }) {
   const { title, body, personal } = data;
 
   return (
-    <main className=" bg-slate-800 relative p-8 lg:p-20 rounded-lg mb-10">
+    <main className=" bg-slate-800 p-8 lg:p-20 rounded-lg mb-10">
       <div>
         <h1 className="mb-10">{title}</h1>
         <div className="md:flex space-y-2">
